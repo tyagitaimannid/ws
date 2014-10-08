@@ -17,7 +17,7 @@
 
 //create function
 	function login_ws($username, $password) { //enkripsi  password dengan md5
-	$password = md5($password);
+	//$password = md5($password);
 //buat koneksi
 	$db = NewADOConnection('mysql');
 	$db -> Connect('localhost','root','','modul_sit');
