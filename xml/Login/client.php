@@ -18,7 +18,7 @@ $result=$client->call('login_ws',array('username'=>$username,'password'=>$passwo
 
 	if ($result=="login berhasil"){
 		$_SESSION['username'] = $username;
-		//header("location:index.php");
+		header("location:index.php");
 	}else {
 		header("location:login.php");	
 	}
